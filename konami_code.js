@@ -7,13 +7,13 @@ function init() {
 
 function keydownHandler(event){
   var key = parseInt(event.detail || event.which)
-  console.log(key)
+  // console.log(key)
   if (key == codeCopy[0]){
     codeCopy = codeCopy.slice(1, codeCopy.length);
-    console.log('match ' + key)
-    console.log('length: ' + codeCopy.length)
+    // console.log('match ' + key)
+    // console.log('length: ' + codeCopy.length)
     if (codeCopy.length === 0) {
-      console.log('done')
+      // console.log('done')
       document.removeEventListener('keydown', keydownHandler, false);
       alert("YOU DID IT!")
     }
